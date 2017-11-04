@@ -26,8 +26,14 @@
                 <h1>{{list.listName}}</h1>
 
                 <div class="card"
+                     ng-controller="cardCtrl as cardCtrl"
                      ng-repeat="card in listCtrl.getCards(list)">
                     {{card.description}}
+
+                    <div ng-click="cardCtrl.deleteCard(card)"
+                         class="remove-small remove-card hand">
+                     </div>
+
                 </div>
 
                 <a ng-click="listCtrl.removeList(list)" class="hand">
@@ -64,6 +70,7 @@
     <script src="js/factories/cardFactory.js"></script>
     <script src="js/controllers/listsCtrl.js"></script>
     <script src="js/controllers/listCtrl.js"></script>
+    <script src="js/controllers/cardCtrl.js"></script>
 
 </body>
 </html>

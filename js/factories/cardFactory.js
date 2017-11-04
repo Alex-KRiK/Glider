@@ -31,6 +31,10 @@ angular.module('app').factory('cardFactory', function () {
         });
     };
 
+    service.deleteCard = function (card) {
+        return _.pull(cards, card)
+    };
+
     return service;
 
 });
