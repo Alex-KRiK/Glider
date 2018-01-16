@@ -6,3 +6,5 @@ Input the text and press enter to create a new card. Edit lists, create new list
 
 <h2>Demo</h2>
 https://alex-krik.github.io/Trello
+
+![trello-png](https://user-images.githubusercontent.com/26335532/34998220-26210808-fae7-11e7-9bb9-a619f08c3535.png)
